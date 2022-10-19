@@ -8,9 +8,12 @@ import java.util.jar.Manifest
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ResultProfileBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        binding = ResultProfileBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
     }
 
